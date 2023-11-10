@@ -1,0 +1,302 @@
+/* h1 {
+  color: red;
+} */
+/* font */
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  overflow-x: hidden;
+}
+
+/* navbar */
+.btn-forNavbar {
+  background-color: #5cb85f;
+  color: #ffffff;
+}
+
+.offcanvas {
+  max-width: 60% !important;
+}
+
+/* Hero Section */
+.hero-title {
+  font-weight: bold;
+}
+.btn-hero {
+  background: var(--primary-lime-green-04, #5cb85f);
+  border: 0px solid black;
+  padding: 8px 12px 8px 12px;
+}
+
+.img__wrapper {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.img__wrapper::before {
+  content: "";
+  background-color: #0d28a6;
+  width: 120%;
+  height: 250px;
+  bottom: 2px;
+  right: -25px;
+  transform: translate(80px, 50px);
+  border-top-left-radius: 50px;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .img__wrapper::before {
+    width: 105%;
+    transform: translate(36px, 50px);
+    right: 0;
+  }
+}
+
+/* Untuk Smartphone (lebar maksimum 480px) */
+@media (max-width: 480px) {
+  .img__wrapper::before {
+    width: 100%;
+    transform: translate(12px, 50px);
+    right: 0;
+    height: inherit;
+  }
+}
+@media (max-width: 320px) {
+  .img__wrapper::before {
+    width: 102%;
+    transform: translate(12px, 50px);
+    right: 0;
+    height: inherit;
+  }
+}
+/* End Hero Section */
+
+/* Our Service Section Start */
+.our-service-title {
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.our-service-container .row .our-service-col-two p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+}
+.our-service-container .row .our-service-col-two ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+.our-service-container .row .our-service-col-two ul li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.bulatan-icon {
+  border-radius: 50%;
+  background-color: var(--primary-dark-blue-01, #cfd4ed);
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 16px;
+}
+/* Our Service Section End */
+
+/* Why Us Section Start */
+.container .heading-why-us {
+  font-weight: bold;
+}
+.container .subHeading-why-us {
+  font-size: 14px;
+  line-height: 20px;
+}
+.container .card .card-body-why-us-section {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.container .card .card-body .cover-icon-like {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 20px;
+  padding: 6px;
+  border-radius: 50%;
+  color: #ffffff;
+}
+.container .card .card-body .card-title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.container .card .card-body .card-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.container .card:hover {
+  cursor: pointer;
+  transform: scale(1.03, 1.03);
+  transition-duration: 0.5s;
+  z-index: 99;
+}
+/* Why Us Section End */
+
+/* testimonial Section Start */
+
+.owl-nav button span {
+  font-size: 30px;
+  height: 100%;
+  display: none;
+  width: 100%;
+}
+
+.btn-wrap {
+  text-align: center;
+  width: 100%;
+}
+.btn-wrap button {
+  background-color: var(--primary-lime-green-04, #5cb85f);
+  color: white;
+  width: 32px;
+  height: 32px;
+  border: none;
+  padding: 6px;
+  border-radius: 50%;
+  margin: 10px;
+  font-size: 18px;
+  transition: all 0.5s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.owl-theme .owl-nav .disabled,
+button.disabled {
+  opacity: 0.6;
+}
+
+/* Testimonial Section End */
+
+/* CTA Banner Section */
+.bg--dark-blue {
+  border-radius: 13px;
+  background: var(--primary-dark-blue-04, #0d28a6);
+}
+.button--green {
+  border-radius: 2px;
+  background: var(--primary-lime-green-04, #5cb85f);
+  padding: 8px 12px;
+  justify-content: center;
+  color: white;
+}
+.btn-cta {
+  background: var(--primary-lime-green-04, #5cb85f);
+  border: 0px solid black;
+  padding: 8px 12px 8px 12px;
+}
+
+/* FAQ Section Start */
+#FAQ-Section {
+  margin-bottom: 150px;
+  margin-top: 60px;
+}
+.container .row .col-md-4 .FAQ-order1,
+.container .row .col-lg-4 .FAQ-order1,
+.container .row .col-sm-12 .FAQ-order1,
+.container .row .col-12 .FAQ-order1 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px; /* 150% */
+}
+
+.container .row .col-md-4 .FAQ-order2,
+.container .row .col-lg-4 .FAQ-order2,
+.container .row .col-sm-12 .FAQ-order2,
+.container .row .col-12 .FAQ-order2 {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.container .row .col-md-8 .accordion .accordion-item,
+.container .row .col-lg-8 .accordion .accordion-item,
+.container .row .col-sm-12 .accordion .accordion-item,
+.container .row .col-12 .accordion .accordion-item {
+  margin-bottom: 16px;
+  border: 1px solid #d4d4d4;
+  background: #fff;
+}
+
+/* Footer */
+#Footer-Section {
+  margin-bottom: 100px;
+}
+.container .row .col-order1 .footer-order1,
+.footer-order2,
+.footer-order3 {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+}
+.container .row .col-order-2 p {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.container .row .col-order-3 p {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+}
+.container .row .col-order-3 .social-icons {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.container .row .col-order-3 .social-icons .fa-brands,
+.fa-regular {
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  background: var(--primary-dark-blue-04, #0d28a6);
+}
+
+@media screen and (max-width: 840px) {
+  .heading-why-us,
+  .subHeading-why-us {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#search .container {
+  background-color: var(--neutral-01, #fff);
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  padding: 24px;
+}
