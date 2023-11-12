@@ -2,284 +2,702 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-  <!-- Link For Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <!-- Link For Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 
-  <!-- Link Cloudflare Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Cloudflare Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Swiper JS CDN -->
-  <!-- <link
+    <!-- Swiper JS CDN -->
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     /> -->
 
-  <!-- Link Kit Awesome -->
-  <script src="https://kit.fontawesome.com/d2f96135a6.js" crossorigin="anonymous"></script>
+    <!-- Link Kit Awesome -->
+    <script src="https://kit.fontawesome.com/d2f96135a6.js" crossorigin="anonymous"></script>
 
-  <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
-  <!-- Link CSS Eksternal -->
-  <link rel="stylesheet" href="css/style.css" />
+    <!-- Link CSS Eksternal -->
+    <link rel="stylesheet" href="css/styleIndex.css" />
 </head>
 
 <body>
-  <!-- NAVBAR SECTION START -->
-  <section id="navbar">
-    <nav class="navbar navbar-expand-lg" style="background-color: #f1f3ff">
+    <!-- NAVBAR SECTION START -->
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg" style="background-color: #f1f3ff">
+            <div class="container">
+                <a class="navbar-brand" href="#">BCR</a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <b>BCR</b>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <!-- NAVIGATION ITEMS -->
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item" style="margin-right: 32px">
+                                <a class="nav-link" aria-current="page" href="#our-service">Our Service</a>
+                            </li>
+                            <li class="nav-item" style="margin-right: 32px">
+                                <a class="nav-link" href="#why-us">Why Us</a>
+                            </li>
+                            <li class="nav-item" style="margin-right: 32px">
+                                <a class="nav-link" href="#testimonial-section">Testimonial</a>
+                            </li>
+                            <li class="nav-item" style="margin-right: 32px">
+                                <a class="nav-link" href="#FAQ-Section">FAQ</a>
+                            </li>
+                        </ul>
+                        <!-- NAVIGATION ITEMS -->
+
+                        <!-- REGISTER BUTTON -->
+                        <form class="d-flex" role="search">
+                            <button class="btn btn-forNavbar" type="submit">
+                                Register
+                            </button>
+                        </form>
+                        <!-- REGISTER BUTTON -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- NAVBAR SECTION END -->
+
+    <!-- Hero Section Start -->
+    <section id="hero-section" class="" style="background-color: #f1f3ff">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 g-4 row-cols-xxl-2 py-5">
+                <div class="col" style="padding-top: 117px; padding-bottom: 30px">
+                    <h1 class="hero-title">
+                        Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
+                    </h1>
+                    <p>
+                        Selamat datang di Binar Car Rental. Kami menyediakan mobil
+                        kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+                        kebutuhanmu untuk sewa mobil selama 24 jam.
+                    </p>
+                    <a class="btn btn-success btn-hero" href="/cars">
+                        Mulai Sewa Mobil
+                    </a>
+                </div>
+                <div class="col hero__right" style="padding-top: 37px">
+                    <div class="img__wrapper">
+                        <img class="img-fluid main__image--car" width="550px" height="400px"
+                            src="https://i.ibb.co/T2b0yPQ/Mercedes-Car-EQC-300k-W-Edition-900x598-1.png"
+                            alt="car images" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- <section id="search-section">
       <div class="container">
-        <a class="navbar-brand" href="#">BCR</a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              <b>BCR</b>
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <!-- NAVIGATION ITEMS -->
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item" style="margin-right: 32px">
-                <a class="nav-link" aria-current="page" href="#our-service">Our Service</a>
-              </li>
-              <li class="nav-item" style="margin-right: 32px">
-                <a class="nav-link" href="#why-us">Why Us</a>
-              </li>
-              <li class="nav-item" style="margin-right: 32px">
-                <a class="nav-link" href="#testimonial-section">Testimonial</a>
-              </li>
-              <li class="nav-item" style="margin-right: 32px">
-                <a class="nav-link" href="#FAQ-Section">FAQ</a>
-              </li>
-            </ul>
-            <!-- NAVIGATION ITEMS -->
-
-            <!-- REGISTER BUTTON -->
-            <form class="d-flex" role="search">
-              <button class="btn btn-forNavbar" type="submit">
-                Register
-              </button>
-            </form>
-            <!-- REGISTER BUTTON -->
-          </div>
-        </div>
-      </div>
-    </nav>
-  </section>
-
-  <!-- NAVBAR SECTION END -->
-
-  <!-- Hero Section Start -->
-  <section id="hero-section" class="" style="background-color: #f1f3ff">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 g-4 row-cols-xxl-2 py-5">
-        <div class="col" style="padding-top: 117px; padding-bottom: 30px">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Hero Section End -->
-
-
-  <!-- <form id="search-form" method="get">
-  </form> -->
-
-  <section id="search" style="margin-top: -50px; z-index: 9999;">
-    <div class="container mb-5">
-      <form id="search-form" method="get">
-        <div class="row">
-          <div class="col-md-3">
-            <label for="tipeDriver" class="form-label">Tipe Driver</label>
-            <select class="form-select" id="tipeDriver" name="tipeDriver" required>
-              <option selected>Pilih Tipe Driver</option>
-              <option value="Dengan Sopir">Dengan Sopir</option>
-              <option value="Lepas Kunci">Tanpa Sopir (Lepas Kunci)</option>
-            </select>
-          </div>
-          <div class="col-md-2">
-            <label for="tanggal" class="form-label">Tanggal</label>
-            <input type="date" name="tanggal" class="form-control" id="tanggal" placeholder="Pilih Tanggal" required />
-          </div>
-          <div class="col-md-3">
-            <label for="waktuJemput" class="form-label">Waktu Jemput</label>
-            <select class="form-select" name="waktuJemput" id="waktuJemput" required>
-              <option value="Pilih Waktu">Pilih Waktu</option>
-              <option value="8">08.00 WIB</option>
-              <option value="9">09.00 WIB</option>
-              <option value="10">10.00 WIB</option>
-              <option value="11">11.00 WIB</option>
-              <option value="18">18.00 WIB</option>
-            </select>
-          </div>
-          <div class="col-md-3">
-            <label for="jumlahpenumpang" class="form-label">Jumlah Penumpang</label>
-            <input type="number" class="form-control" id="jumlahpenumpang" placeholder="Jumlah Penumpang"
-              name="jumlahpenumpang" required />
-          </div>
-          <div class="col-md-1">
-            <div style="margin-top: 38px">
-              <button type="submit" id="submitButton" class="btn btn-success btn-sm">
-                Cari Mobil
-              </button>
+        <form id="form-search">
+          <div class="row">
+            <div class="col-md-3">
+              <label for="tipe-driver" class="form-label">Tipe Driver</label>
+              <select
+                class="form-select"
+                id="tipe-driver"
+                name="tipe-driver"
+                required
+              >
+                <option selected>Pilih Tipe Driver</option>
+                <option value="Dengan Sopir">Dengan Sopir</option>
+                <option value="Lepas Kunci">Tanpa Sopir (Lepas Kunci)</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="Tanggal" class="form-label">Tanggal</label>
+              <input type="date" name="tanggal" class="form-control"
+              id="Tanggal" placeholder="Pilih Tanggal" required" />
+            </div>
+            <div class="col-md-3">
+              <label for="waktu-jemput" class="form-label">Waktu Jemput</label>
+              <select
+                class="form-select"
+                name="waktu-jemput"
+                id="waktu-jemput"
+                required
+              >
+                <option selected>Pilih Waktu</option>
+                <option value="08.00 WIB">08.00 WIB</option>
+                <option value="09.00 WIB">09.00 WIB</option>
+                <option value="10.00 WIB">10.00 WIB</option>
+                <option value="11.00 WIB">11.00 WIB</option>
+                <option value="12.00 WIB">12.00 WIB</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="jumlah-penumpang" class="form-label"
+                >Jumlah Penumpang</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="jumlah-penumpang"
+                placeholder="Jumlah Penumpang"
+                name="jumlah-penumpang"
+                required
+              />
+            </div>
+            <div class="col-md-1">
+              <div style="margin-top: 38px">
+                <button
+                  type="submit"
+                  name="submit"
+                  class="btn btn-success btn-sm"
+                >
+                  Cari Mobil
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <section class="mb-5">
-    <div class="container">
-      <section class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 g-4 row-cols-xxl-3"
-        id="result">
-        <% if (!cars.length) { %>
-          <h2>No Result</h2>
-          <% } %>
-            <% cars.forEach(function(car){ %>
-              <!-- <li> Plate: <%- car.plate %> </li> -->
-              <div class="col mb-2">
-                <div class="card" style="width: 100%;">
-                  <img src=<%- car.image %> class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title"
-                      style="color: #000;font-family: Helvetica;font-size: 16px;font-style: normal;font-weight: 600;line-height: 20px;">
-                      <%- car.manufacture %>/<%- car.model %>
-                    </h4>
-                    <h4 class="card-title"
-                      style="color: #000;font-family: Helvetica;font-size: 20px;font-style: normal;font-weight: 700;line-height: 20px;">
-                      Rp <%- car.rentPerDay %> / hari</h4>
-                    <p class="card-text"><%- car.description %>
-                    </p>
-
-                    <!-- Jumlah Orang -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <path
-                        d="M19.1666 17.5001V15.8334C19.1661 15.0948 18.9203 14.3774 18.4678 13.7937C18.0153 13.2099 17.3817 12.793 16.6666 12.6084"
-                        stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round" />
-                      <path
-                        d="M14.1667 17.5V15.8333C14.1667 14.9493 13.8155 14.1014 13.1904 13.4763C12.5653 12.8512 11.7174 12.5 10.8334 12.5H4.16671C3.28265 12.5 2.43481 12.8512 1.80968 13.4763C1.18456 14.1014 0.833374 14.9493 0.833374 15.8333V17.5"
-                        stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round" />
-                      <path
-                        d="M13.3334 2.6084C14.0504 2.79198 14.6859 3.20898 15.1397 3.79366C15.5936 4.37833 15.8399 5.09742 15.8399 5.83757C15.8399 6.57771 15.5936 7.2968 15.1397 7.88147C14.6859 8.46615 14.0504 8.88315 13.3334 9.06673"
-                        stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round" />
-                      <path
-                        d="M7.49996 9.16667C9.34091 9.16667 10.8333 7.67428 10.8333 5.83333C10.8333 3.99238 9.34091 2.5 7.49996 2.5C5.65901 2.5 4.16663 3.99238 4.16663 5.83333C4.16663 7.67428 5.65901 9.16667 7.49996 9.16667Z"
-                        stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <label for="" class="ms-2 mb-2"><%- car.capacity %></label>
-                    <br>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <g clip-path="url(#clip0_22128_12390)">
-                        <path
-                          d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
-                          stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                          d="M16.1667 12.5002C16.0558 12.7515 16.0227 13.0303 16.0717 13.3007C16.1207 13.571 16.2496 13.8204 16.4417 14.0168L16.4917 14.0668C16.6467 14.2216 16.7696 14.4054 16.8535 14.6078C16.9373 14.8101 16.9805 15.027 16.9805 15.246C16.9805 15.465 16.9373 15.6819 16.8535 15.8842C16.7696 16.0866 16.6467 16.2704 16.4917 16.4252C16.3369 16.5801 16.1531 16.7031 15.9508 16.7869C15.7484 16.8708 15.5316 16.914 15.3125 16.914C15.0935 16.914 14.8766 16.8708 14.6743 16.7869C14.472 16.7031 14.2882 16.5801 14.1334 16.4252L14.0834 16.3752C13.887 16.183 13.6375 16.0542 13.3672 16.0052C13.0969 15.9561 12.8181 15.9892 12.5667 16.1002C12.3202 16.2058 12.11 16.3812 11.962 16.6048C11.8139 16.8283 11.7344 17.0903 11.7334 17.3585V17.5002C11.7334 17.9422 11.5578 18.3661 11.2452 18.6787C10.9327 18.9912 10.5087 19.1668 10.0667 19.1668C9.62468 19.1668 9.20076 18.9912 8.8882 18.6787C8.57563 18.3661 8.40004 17.9422 8.40004 17.5002V17.4252C8.39359 17.1493 8.30431 16.8818 8.1438 16.6574C7.98329 16.433 7.75899 16.2621 7.50004 16.1668C7.24869 16.0559 6.96988 16.0228 6.69955 16.0718C6.42922 16.1208 6.17977 16.2497 5.98337 16.4418L5.93337 16.4918C5.77858 16.6468 5.59477 16.7697 5.39244 16.8536C5.19011 16.9375 4.97323 16.9806 4.75421 16.9806C4.53518 16.9806 4.3183 16.9375 4.11597 16.8536C3.91364 16.7697 3.72983 16.6468 3.57504 16.4918C3.42008 16.337 3.29715 16.1532 3.21327 15.9509C3.1294 15.7486 3.08623 15.5317 3.08623 15.3127C3.08623 15.0936 3.1294 14.8768 3.21327 14.6744C3.29715 14.4721 3.42008 14.2883 3.57504 14.1335L3.62504 14.0835C3.81715 13.8871 3.94603 13.6376 3.99504 13.3673C4.04406 13.097 4.01097 12.8182 3.90004 12.5668C3.7944 12.3204 3.619 12.1101 3.39543 11.9621C3.17185 11.814 2.90986 11.7346 2.64171 11.7335H2.50004C2.05801 11.7335 1.63409 11.5579 1.32153 11.2453C1.00897 10.9328 0.833374 10.5089 0.833374 10.0668C0.833374 9.6248 1.00897 9.20088 1.32153 8.88832C1.63409 8.57576 2.05801 8.40016 2.50004 8.40016H2.57504C2.85087 8.39371 3.11838 8.30443 3.34279 8.14392C3.5672 7.98341 3.73814 7.75911 3.83337 7.50016C3.9443 7.24882 3.97739 6.97 3.92838 6.69967C3.87936 6.42934 3.75049 6.17989 3.55837 5.9835L3.50837 5.9335C3.35341 5.77871 3.23048 5.59489 3.14661 5.39256C3.06273 5.19023 3.01956 4.97335 3.01956 4.75433C3.01956 4.5353 3.06273 4.31843 3.14661 4.1161C3.23048 3.91377 3.35341 3.72995 3.50837 3.57516C3.66316 3.4202 3.84698 3.29727 4.04931 3.2134C4.25164 3.12952 4.46851 3.08635 4.68754 3.08635C4.90657 3.08635 5.12344 3.12952 5.32577 3.2134C5.5281 3.29727 5.71192 3.4202 5.86671 3.57516L5.91671 3.62516C6.11311 3.81728 6.36255 3.94615 6.63288 3.99517C6.90321 4.04418 7.18203 4.01109 7.43337 3.90016H7.50004C7.74651 3.79453 7.95672 3.61913 8.10478 3.39555C8.25285 3.17198 8.3323 2.90998 8.33337 2.64183V2.50016C8.33337 2.05814 8.50897 1.63421 8.82153 1.32165C9.13409 1.00909 9.55801 0.833496 10 0.833496C10.4421 0.833496 10.866 1.00909 11.1786 1.32165C11.4911 1.63421 11.6667 2.05814 11.6667 2.50016V2.57516C11.6678 2.84332 11.7472 3.10531 11.8953 3.32888C12.0434 3.55246 12.2536 3.72786 12.5 3.8335C12.7514 3.94443 13.0302 3.97752 13.3005 3.9285C13.5709 3.87948 13.8203 3.75061 14.0167 3.5585L14.0667 3.5085C14.2215 3.35354 14.4053 3.2306 14.6076 3.14673C14.81 3.06286 15.0268 3.01968 15.2459 3.01968C15.4649 3.01968 15.6818 3.06286 15.8841 3.14673C16.0864 3.2306 16.2702 3.35354 16.425 3.5085C16.58 3.66328 16.7029 3.8471 16.7868 4.04943C16.8707 4.25176 16.9139 4.46864 16.9139 4.68766C16.9139 4.90669 16.8707 5.12357 16.7868 5.3259C16.7029 5.52823 16.58 5.71204 16.425 5.86683L16.375 5.91683C16.1829 6.11323 16.0541 6.36268 16.005 6.633C15.956 6.90333 15.9891 7.18215 16.1 7.4335V7.50016C16.2057 7.74664 16.3811 7.95684 16.6047 8.10491C16.8282 8.25297 17.0902 8.33243 17.3584 8.3335H17.5C17.9421 8.3335 18.366 8.50909 18.6785 8.82165C18.9911 9.13421 19.1667 9.55813 19.1667 10.0002C19.1667 10.4422 18.9911 10.8661 18.6785 11.1787C18.366 11.4912 17.9421 11.6668 17.5 11.6668H17.425C17.1569 11.6679 16.8949 11.7474 16.6713 11.8954C16.4477 12.0435 16.2723 12.2537 16.1667 12.5002V12.5002Z"
-                          stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22128_12390">
-                          <rect width="20" height="20" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <label for="" class="ms-2 mb-2"><%- car.transmission %></label>
-                    <br>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <path
-                        d="M15.8333 3.3335H4.16667C3.24619 3.3335 2.5 4.07969 2.5 5.00016V16.6668C2.5 17.5873 3.24619 18.3335 4.16667 18.3335H15.8333C16.7538 18.3335 17.5 17.5873 17.5 16.6668V5.00016C17.5 4.07969 16.7538 3.3335 15.8333 3.3335Z"
-                        stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M2.5 8.3335H17.5" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M13.3334 1.6665V4.99984" stroke="#8A8A8A" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <path d="M6.66663 1.6665V4.99984" stroke="#8A8A8A" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </svg>
-                    <label for="" class="ms-2 mb-2">Tahun <%- car.year %></label>
-                    <br>
-                    <a href="#" class="btn btn-lg btn-success w-100"
-                      style="background-color:#5CB85F; border: none;">Pilih Mobil</a>
-                  </div>
-                </div>
-              </div>
-              <% }); %>
-      </section>
-    </div>
-  </section>
-
-  <!-- Footer Section Start -->
-  <section id="Footer-Section">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-4 row-cols-xxl-4">
-        <div class="col col-order1">
-          <p class="footer-order1">
-            Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
-          </p>
-          <p class="footer-order2">binarcarrental@gmail.com</p>
-          <p class="footer-order3">081-233-334-808</p>
-        </div>
-        <div class="col col-order-2">
-          <p>Our Service</p>
-          <p>Why Us</p>
-          <p>Testimonial</p>
-          <p>FAQ</p>
-        </div>
-        <div class="col col-order-3">
-          <p>Connect with us</p>
-          <div class="social-icons">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-regular fa-envelope"></i>
-            <i class="fa-brands fa-twitch"></i>
-          </div>
-        </div>
-        <div class="col col-order-4">
-          <p>Copyright Binar 2022</p>
-          <div style="width: 100px; height: 34px; background: #0d28a6"></div>
-        </div>
+        </form>
       </div>
-    </div>
-  </section>
-  <!-- Footer Section End -->
+    </section> -->
 
-  <!-- Bootstrap Link -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+    <!-- Our Service Section Start -->
+    <section id="our-service mt-5">
+        <div class="container our-service-container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 g-4 row-cols-xxl-2 py-5">
+                <div class="col our-service-col-one d-flex justify-content-center">
+                    <img src="https://i.ibb.co/tBg2059/our-service-image.png" alt=""
+                        class="img-fluid our-service-img" />
+                </div>
+                <div class="col our-service-col-two py-5 d-flex justify-content-center flex-column">
+                    <h1 class="our-service-title">
+                        Best Car Rental for any kind of trip in (Lokasimu)!
+                    </h1>
+                    <p>
+                        Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga
+                        lebih murah dibandingkan yang lain, kondisi mobil baru, serta
+                        kualitas pelayanan terbaik untuk perjalanan wisata, bisnis,
+                        wedding, meeting, dll.
+                    </p>
+                    <ul>
+                        <li>
+                            <div class="bulatan-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            Sewa Mobil Dengan Supir di Bali 12 Jam
+                        </li>
+                        <li>
+                            <div class="bulatan-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            Sewa Mobil Lepas Kunci di Bali 24 Jam
+                        </li>
+                        <li>
+                            <div class="bulatan-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            Sewa Mobil Jangka Panjang Bulanan
+                        </li>
+                        <li>
+                            <div class="bulatan-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            Gratis Antar - Jemput Mobil di Bandara
+                        </li>
+                        <li>
+                            <div class="bulatan-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            Layanan Airport Transfer / Drop In Out
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Service Section End -->
 
-  <!-- Swiper JS -->
-  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <!-- Why Us Section -->
+    <section id="why-us">
+        <div class="container">
+            <h1 class="heading-why-us">Why Us?</h1>
+            <p class="subHeading-why-us">Mengapa harus pilih Binar Car Rental?</p>
+        </div>
+        <div class="container" style="display: flex; justify-content: space-between">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 g-4 row-cols-xxl-4 py-5">
+                <!-- Column 1 -->
+                <div class="col">
+                    <div data-aos="zoom-in-up" class="card" style="width: 100%; border-radius: 8px">
+                        <div class="card-body card-body-why-us-section">
+                            <div class="cover-icon-like" style="background: var(--allert-warning, #f9cc00)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <path
+                                        d="M5.83329 18.3333H3.33329C2.89127 18.3333 2.46734 18.1577 2.15478 17.8452C1.84222 17.5326 1.66663 17.1087 1.66663 16.6667V10.8333C1.66663 10.3913 1.84222 9.96738 2.15478 9.65482C2.46734 9.34226 2.89127 9.16666 3.33329 9.16666H5.83329M11.6666 7.5V4.16666C11.6666 3.50362 11.4032 2.86774 10.9344 2.3989C10.4656 1.93006 9.82967 1.66666 9.16663 1.66666L5.83329 9.16666V18.3333H15.2333C15.6352 18.3379 16.0253 18.197 16.3315 17.9367C16.6378 17.6763 16.8397 17.3141 16.9 16.9167L18.05 9.41666C18.0862 9.17779 18.0701 8.9339 18.0027 8.70187C17.9354 8.46985 17.8184 8.25524 17.6598 8.07293C17.5013 7.89061 17.305 7.74494 17.0846 7.64601C16.8642 7.54708 16.6249 7.49726 16.3833 7.5H11.6666Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h5 class="card-title">Mobil Lengkap</h5>
+                            <p class="card-text">
+                                Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan
+                                terawat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Column 1 -->
+                <!-- Start Column 2 -->
+                <div class="col">
+                    <div data-aos="zoom-in-up" class="card" style="width: 100%; border-radius: 8px">
+                        <div class="card-body card-body-why-us-section">
+                            <div class="cover-icon-like" style="background: var(--allert-danger, #fa2c5a)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <path
+                                        d="M17.1583 11.175L11.1833 17.15C11.0285 17.305 10.8447 17.4279 10.6424 17.5118C10.44 17.5956 10.2232 17.6388 10.0041 17.6388C9.7851 17.6388 9.56822 17.5956 9.36589 17.5118C9.16356 17.4279 8.97975 17.305 8.82496 17.15L1.66663 10V1.66666H9.99996L17.1583 8.825C17.4687 9.13727 17.6429 9.55969 17.6429 10C17.6429 10.4403 17.4687 10.8627 17.1583 11.175V11.175Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M5.83337 5.83334H5.84171" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h5 class="card-title">Harga Murah</h5>
+                            <p class="card-text">
+                                Harga murah dan bersaing, bisa bandingkan harga kami dengan
+                                rental mobil lain
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Column 2 -->
+                <!-- Start Column 3 -->
+                <div class="col">
+                    <div data-aos="zoom-in-up" class="card" style="width: 100%; border-radius: 8px">
+                        <div class="card-body card-body-why-us-section">
+                            <div class="cover-icon-like" style="background: var(--primary-dark-blue-04, #0d28a6)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <path
+                                        d="M9.99996 18.3333C14.6023 18.3333 18.3333 14.6024 18.3333 10C18.3333 5.39762 14.6023 1.66666 9.99996 1.66666C5.39759 1.66666 1.66663 5.39762 1.66663 10C1.66663 14.6024 5.39759 18.3333 9.99996 18.3333Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10 5V10L13.3333 11.6667" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h5 class="card-title">Layanan 24 Jam</h5>
+                            <p class="card-text">
+                                Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga
+                                tersedia di akhir minggu
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Column 3 -->
+                <!-- Start Column 4 -->
+                <div class="col">
+                    <div data-aos="zoom-in-up" class="card" style="width: 100%; border-radius: 8px">
+                        <div class="card-body card-body-why-us-section">
+                            <div class="cover-icon-like" style="background: var(--primary-lime-green-04, #5cb85f)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22"
+                                    fill="none">
+                                    <path
+                                        d="M10.0001 13.5C13.2217 13.5 15.8334 10.8883 15.8334 7.66667C15.8334 4.44501 13.2217 1.83334 10.0001 1.83334C6.77842 1.83334 4.16675 4.44501 4.16675 7.66667C4.16675 10.8883 6.77842 13.5 10.0001 13.5Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M6.84159 12.575L5.83325 20.1667L9.99992 17.6667L14.1666 20.1667L13.1583 12.5667"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h5 class="card-title">Sopir Profesional</h5>
+                            <p class="card-text">
+                                Sopir yang profesional, berpengalaman, jujur, ramah dan selalu
+                                tepat waktu
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Column 4 -->
+            </div>
+        </div>
+    </section>
 
-  <!-- jQuery -->
+    <!-- Why Us Section End -->
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!-- Testimonial Section Start -->
+    <section id="testimonial-section">
+        <div class="container-fluid container-testimonial">
+            <h1 class="carousel-heading d-flex justify-content-center fw-bold" data-aos="zoom-in-up">
+                Testimonial
+            </h1>
+            <p class="carousel-subHeading d-flex justify-content-center" data-aos="zoom-in-up">
+                Berbagai review positif dari para pelanggan kami
+            </p>
+            <div id="myCarousel" class="owl-carousel owl-theme">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-2">
+                                <img src="https://i.ibb.co/4YnXrFR/img-photo.png" alt=""
+                                    style="width: 80px; height: 80px; margin: 0 auto" />
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-10">
+                                <div class="row">
+                                    <div class="col-4 d-flex">
+                                        <img src="https://i.ibb.co/9T51dvT/star.png" width="16px" alt="" />
+                                        <img src="https://i.ibb.co/9T51dvT/star.png" width="16px" alt="" />
+                                        <img src="https://i.ibb.co/9T51dvT/star.png" width="16px" alt="" />
+                                        <img src="https://i.ibb.co/9T51dvT/star.png" width="16px" alt="" />
+                                        <img src="https://i.ibb.co/9T51dvT/star.png" width="16px" alt="" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>
+                                            “Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit, sed do eiusmod lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit, sed do eiusmod lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod”
+                                        </p>
+                                        <p style="font-weight: bolder">John Dee 32, Bromo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body p-4">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-2">
+                                <img src="https://i.ibb.co/QnWpwWF/picture-profile-carousel-2.png" alt=""
+                                    style="width: 80px; height: 80px; margin: 0 auto" />
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-10">
+                                <div class="row">
+                                    <div class="col-4 d-flex">
+                                        <img src="https://i.ibb.co/9T51dvT/star.png" width="16px" alt="" />
+                                        <img src="https://i.ibb.co/9T51dvT/star.png" width="16px" alt="" />
+                                        <img src="https://i.ibb.co/9T51dvT/star.png" width="16px" alt="" />
+                                        <img src="https://i.ibb.co/9T51dvT/star.png" width="16px" alt="" />
+                                        <img src="https://i.ibb.co/9T51dvT/star.png" width="16px" alt="" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>
+                                            “Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit, sed do eiusmod lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit, sed do eiusmod lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod”
+                                        </p>
+                                        <p style="font-weight: bolder">John Dee 32, Bromo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <button class="prev-btn">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </button>
+                <button class="next-btn">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section End -->
 
-  <!-- Owl Carousel JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- CTA Banner Section Start -->
+    <section id="cta-banner">
+        <div class="cta-banner__wrapper">
+            <div class="container">
+                <div class="row row-cols-1 py-5">
+                    <div class="col">
+                        <div class="card bg--dark-blue p-4">
+                            <div class="card-body text-center">
+                                <div class="row row-cols-1 justify-content-center">
+                                    <div class="col">
+                                        <h2 class="text-white fw-bold">
+                                            Sewa Mobil di (Lokasimu) Sekarang
+                                        </h2>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="text-white fw-light">
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et
+                                                dolore magna aliqua.</small>
+                                        </p>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn btn-success btn-cta">
+                                            Mulai Sewa Mobil
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Banner Section End -->
 
-  <!-- JavaScript -->
+    <!-- FAQ Section Start -->
+    <section id="FAQ-Section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4" data-aos="fade-right">
+                    <p class="FAQ-order1 fw-bold">Frequently Asked Question</p>
+                    <p class="FAQ-order2 fw-light">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8" data-aos="fade-left">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Apa saja syarat yang dibutuhkan?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quis repudiandae illum nisi voluptates quidem vel magni sunt
+                                    eligendi nobis cum!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Berapa hari minimal sewa mobil lepas kunci?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Pariatur iure autem laboriosam qui delectus quisquam nobis
+                                    facilis voluptate distinctio excepturi?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Berapa hari sebelumnya sabaiknya booking sewa mobil?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Recusandae, eum. Repellendus non itaque eligendi voluptatum
+                                    nihil. Molestiae nobis perferendis nihil.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Apakah Ada biaya antar-jemput?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Recusandae, eum. Repellendus non itaque eligendi voluptatum
+                                    nihil. Molestiae nobis perferendis nihil.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+                                    Bagaimana jika terjadi kecelakaan
+                                </button>
+                            </h2>
+                            <div id="collapseFifth" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Recusandae, eum. Repellendus non itaque eligendi voluptatum
+                                    nihil. Molestiae nobis perferendis nihil.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section End -->
 
-  <!-- <script src="scripts/app.example.js"></script>
-    <script src="scripts/car.example.js"></script>
-    <script src="scripts/binar.js"></script> -->
-  <script src="scripts/main.js"></script>
+    <!-- Footer Section Start -->
+    <section id="Footer-Section">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-4 row-cols-xxl-4">
+                <div class="col col-order1">
+                    <p class="footer-order1">
+                        Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
+                    </p>
+                    <p class="footer-order2">binarcarrental@gmail.com</p>
+                    <p class="footer-order3">081-233-334-808</p>
+                </div>
+                <div class="col col-order-2">
+                    <p>Our Service</p>
+                    <p>Why Us</p>
+                    <p>Testimonial</p>
+                    <p>FAQ</p>
+                </div>
+                <div class="col col-order-3">
+                    <p>Connect with us</p>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-regular fa-envelope"></i>
+                        <i class="fa-brands fa-twitch"></i>
+                    </div>
+                </div>
+                <div class="col col-order-4">
+                    <p>Copyright Binar 2022</p>
+                    <div style="width: 100px; height: 34px; background: #0d28a6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Bootstrap Link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+    <!-- jQuery -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- JavaScript -->
+
+    <script>
+        $(document).ready(function () {
+            $("#myCarousel").owlCarousel({
+                center: true,
+                items: 3,
+                loop: true,
+                dots: false,
+                margin: 20,
+                nav: true, // Show navigation buttons
+                responsive: {
+                    0: {
+                        items: 1, // Number of cards shown in the carousel for smaller screens
+                    },
+                    768: {
+                        items: 2, // Number of cards shown in the carousel for medium screens
+                    },
+                    992: {
+                        items: 2, // Number of cards shown in the carousel for large screens
+                    },
+                },
+            });
+            var owl = $(".owl-carousel");
+            owl.owlCarousel();
+            $(".next-btn").click(function () {
+                owl.trigger("next.owl.carousel");
+            });
+            $(".prev-btn").click(function () {
+                owl.trigger("prev.owl.carousel");
+            });
+            $(".prev-btn").addClass("disabled");
+            $(owl).on("translated.owl.carousel", function (event) {
+                if ($(".owl-prev").hasClass("disabled")) {
+                    $(".prev-btn").addClass("disabled");
+                } else {
+                    $(".prev-btn").removeClass("disabled");
+                }
+                if ($(".owl-next").hasClass("disabled")) {
+                    $(".next-btn").addClass("disabled");
+                } else {
+                    $(".next-btn").removeClass("disabled");
+                }
+            });
+        });
+
+        // 1. tangkap element dengan class menu
+        const menu = document.querySelector(".navbar-nav");
+
+        // 2. jika element dengan class menu diklik
+        menu.addEventListener("click", function (e) {
+            // 3. maka ambil element apa yang diklik oleh user
+            const targetMenu = e.target;
+
+            // 4. lalu cek, jika element itu adalah link dengan class menu__link
+            if (targetMenu.classList.contains("nav-link")) {
+                // 5. maka ambil menu link yang aktif
+                const menuLinkActive = document.querySelector("ul li a.active");
+
+                // 6. lalu cek, Jika menu link active ada dan menu yang di klik user adalah menu yang tidak sama dengan menu yang aktif, (cara cek-nya yaitu dengan membandingkan value attribute href-nya)
+                if (
+                    menuLinkActive !== null &&
+                    targetMenu.getAttribute("href") !==
+                    menuLinkActive.getAttribute("href")
+                ) {
+                    // 7. maka hapus class active pada menu yang sedang aktif
+                    menuLinkActive.classList.remove("active");
+                }
+
+                // 8. terakhir tambahkan class active pada menu yang di klik oleh user
+                targetMenu.classList.add("active");
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -13,9 +13,9 @@ const config: { [key: string]: Knex.Config } = {
   development: {
     client: "postgresql",
     connection: {
-      database: "binar_car_dashboard",
-      user: "postgres",
-      password: "docker"
+      database: "my_db",
+      user: "username",
+      password: "password"
     },
     pool: {
       min: 2,
@@ -28,9 +28,9 @@ const config: { [key: string]: Knex.Config } = {
   production: {
     client: "postgresql",
     connection: {
-      database: "binar_car_dashboard",
-      user: "postgres",
-      password: "docker"
+      database: "my_db",
+      user: "username",
+      password: "password"
     },
     pool: {
       min: 2,
